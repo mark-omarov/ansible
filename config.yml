@@ -1,0 +1,68 @@
+# Homebrew
+homebrew_clear_cache: true
+homebrew_upgrade_all_packages: true
+homebrew_cask_appdir: /Applications
+homebrew_installed_packages:
+  - git
+  - github/gh/gh
+  - sqlite
+  - nmap
+  - stow
+homebrew_cask_apps:
+  - firefox-developer-edition
+  - raycast
+  - docker
+  - visual-studio-code
+  - rectangle
+  - deepl
+  - 1password
+  - adguard
+  - iterm2
+  - ticktick
+  - telegram
+  - spotify
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-versions
+
+# Mac App Store
+# At this point I am already signed, no need to sign in again
+mas_email: ""
+mas_password: ""
+mas_upgrade_all_apps: true
+mas_installed_apps: []
+mas_uninstalled_apps:
+  - { id: 408981434, name: "iMovie" }
+  - { id: 409183694, name: "Keynote" }
+  - { id: 682658836, name: "GarageBand" }
+
+# Dock
+configure_dock: true
+dockitems_remove:
+  - Launchpad
+  - Safari
+  - Messages
+  - Mail
+  - Maps
+  - Photos
+  - FaceTime
+  - Calendar
+  - Contacts
+  - Reminders
+  - Notes
+  - Freeform
+  - TV
+  - Music
+  - Keynote
+  - Numbers
+  - Pages
+  - 'App Store'
+  - 'System Settings'
+  - Downloads
+
+# Dotfiles
+dotfiles_repo: https://github.com/mark-omarov/dotfiles.git
+dotfiles_repo_local_destination: "~/.dotfiles"
+dotfiles_repo_version: main
+dotfiles_stow_script: ./run.sh

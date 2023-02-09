@@ -1,0 +1,28 @@
+---
+- name: Ensure dotfiles cloned locally
+  git:
+    repo: "{{ dotfiles_repo }}"
+    dest: "{{ dotfiles_repo_local_destination }}"
+    version: "{{ dotfiles_repo_version }}"
+  become: false
+
+- name: Ensure dotfiles stowed
+  ansible.builtin.shell: "{{ dotfiles_stow_script }}"
+  args:
+    chdir: "{{ dotfiles_repo_local_destination }}"
+
+- name: Decrypt SSH Private Key
+  ansible.builtin.copy:
+    src: "{{dotfiles_repo_local_destination}}/ssh/.ssh/id_ed25519"
+    dest: "{{dotfiles_repo_local_destination}}/ssh/.ssh/id_ed25519"
+    mode: 0600
+
+- name: Ensure correct permissions for SSH folder
+  ansible.builtin.file:
+    path: "{{dotfiles_repo_local_destination}}/ssh/.ssh"
+    mode: 0700
+
+- name: Add SSH Key to the SSH Agent
+  shell: |
+    eval "$(ssh-agent)"
+    ssh-add --apple-use-keychain ~/.ssh/id_ed25519
