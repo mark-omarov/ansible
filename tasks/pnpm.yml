@@ -1,0 +1,3 @@
+---
+- name: Ensure pnpm is installed
+  shell: curl -fsSL https://get.pnpm.io/install.sh | sh -
