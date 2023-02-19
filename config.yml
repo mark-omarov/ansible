@@ -10,6 +10,7 @@ homebrew_installed_packages:
   - stow
   - autojump
   - neovim
+  - starship
 homebrew_cask_apps:
   - firefox-developer-edition
   - raycast

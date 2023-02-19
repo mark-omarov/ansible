@@ -1,0 +1,17 @@
+- name: Check if omz is installed
+  stat:
+    path: ~/.oh-my-zsh
+  register: omz_installed
+
+- name: Ensure the latest version of omz is installed
+  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  when: not omz_installed.stat.exists
+
+- name: Check if zsh-autocomplete is installed
+  stat:
+    path: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+  register: zsh_autocomplete_installed
+
+- name: Ensure zsh-autocomplete plugin
+  shell: git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+  when: not zsh_autocomplete_installed.stat.exists

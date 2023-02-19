@@ -16,6 +16,8 @@
     tags: ['dock']
 
   tasks:
+    - import_tasks: tasks/omz.yml
+      tags: ['dotfiles']
     - import_tasks: tasks/dotfiles.yml
       tags: ['dotfiles']
     - import_tasks: tasks/pnpm.yml
