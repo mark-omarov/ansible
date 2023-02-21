@@ -24,3 +24,5 @@
       tags: ['pnpm']
     - import_tasks: tasks/nodejs.yml
       tags: ['nodejs']
+    - import_tasks: tasks/deno.yml
+      tags: ['deno']
