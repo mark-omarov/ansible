@@ -12,6 +12,7 @@ homebrew_installed_packages:
   - neovim
   - starship
   - tmux
+  - fzf
 homebrew_cask_apps:
   - firefox-developer-edition
   - raycast
