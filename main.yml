@@ -26,3 +26,5 @@
       tags: ['nodejs']
     - import_tasks: tasks/deno.yml
       tags: ['deno']
+    - import_tasks: tasks/rust.yml
+      tags: ['rust']
