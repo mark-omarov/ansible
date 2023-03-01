@@ -14,6 +14,7 @@ homebrew_installed_packages:
   - tmux
   - fzf
   - lazygit
+  - wget
 homebrew_cask_apps:
   - firefox-developer-edition
   - raycast
