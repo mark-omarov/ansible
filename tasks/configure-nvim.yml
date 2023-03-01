@@ -1,0 +1,8 @@
+- name: Install tree-sitter CLI
+  shell: cargo install tree-sitter-cli
+- name: Install ripgrep
+  shell: cargo install ripgrep
+- name: Clone AstroNvim
+  ansible.builtin.git:
+    repo: https://github.com/AstroNvim/AstroNvim.git
+    dest: ~/.config/nvim

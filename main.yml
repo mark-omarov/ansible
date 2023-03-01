@@ -28,3 +28,5 @@
       tags: ['deno']
     - import_tasks: tasks/rust.yml
       tags: ['rust']
+    - import_tasks: tasks/configure-nvim.yml
+      tags: ['nvim']
