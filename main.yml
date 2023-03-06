@@ -30,3 +30,4 @@
       tags: ['rust']
     - import_tasks: tasks/configure-nvim.yml
       tags: ['nvim']
+    - import_tasks: tasks/ensure-zsh-syntax-highlighting.yml
