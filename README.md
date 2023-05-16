@@ -7,6 +7,17 @@ This is a playbook to set up my development environment on a new machine. It's a
 0. Install [Homebrew][homebrew]
 1. Install [pyenv][pyenv]
 2. Install Python - `pyenv install 3.11.1`
+
+    If you see `WARNING: The Python lzma extension was not compiled. Missing the lzma lib?`, follow these steps:
+    - Install dependencies with:
+      ```bash
+      brew install openssl readline sqlite3 xz zlib tcl-tk
+      ```
+    - Install Python with:
+      ```bash
+      CFLAGS="-I$(brew --prefix xz)/include" LDFLAGS="-L$(brew --prefix xz)/lib" pyenv install 3.11.1
+      ```
+
 3. Install Ansible - `pip install ansible`
 
 ## Running the Playbook
