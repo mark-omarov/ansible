@@ -27,7 +27,7 @@ I used products they created to avoid lots of manual work. I also used their doc
 [firefoxde]: https://www.mozilla.org/en-US/firefox/developer/
 [raycast]: https://raycast.com/
 [ansible-vault]: https://docs.ansible.com/ansible/latest/vault_guide/index.html
-[mas]: https://github.com/mas-cli/masg
+[mas]: https://github.com/mas-cli/mas
 [geerlingguy]: https://github.com/geerlingguy
 [ansible-for-mac]: https://github.com/geerlingguy/ansible-collection-mac/
 [elliotweiser]: https://github.com/elliotweiser
