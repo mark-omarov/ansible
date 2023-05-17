@@ -4,6 +4,7 @@
     repo: "{{ dotfiles_repo }}"
     dest: "{{ dotfiles_repo_local_destination }}"
     version: "{{ dotfiles_repo_version }}"
+    force: true
   become: false
 
 - name: Ensure dotfiles stowed
@@ -13,7 +14,7 @@
 
 - name: Decrypt SSH Private Key
   ansible.builtin.copy:
-    src: "{{dotfiles_repo_local_destination}}/ssh/.ssh/id_ed25519"
+    src: "{{dotfiles_repo_local_destination}}/ssh/.ssh/private_id_ed25519"
     dest: "{{dotfiles_repo_local_destination}}/ssh/.ssh/id_ed25519"
     mode: 0600
 
