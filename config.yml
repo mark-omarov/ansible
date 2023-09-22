@@ -30,6 +30,7 @@ homebrew_cask_apps:
   - spotify
   - keycastr
   - kap
+  - alt-tab
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
