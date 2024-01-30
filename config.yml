@@ -16,6 +16,7 @@ homebrew_installed_packages:
   - lazygit
   - wget
   - tldr
+  - ripgrep
 homebrew_cask_apps:
   - firefox-developer-edition
   - raycast
