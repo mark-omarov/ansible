@@ -13,7 +13,7 @@ homebrew_installed_packages:
   - starship
   - tmux
   - fzf
-  - lazygit
+  - jesseduffield/lazygit/lazygit
   - wget
   - tldr
   - ripgrep
