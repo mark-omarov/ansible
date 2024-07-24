@@ -1,5 +1,8 @@
 # Mark's Development Environment Ansible Playbook
 
+> [!WARNING]
+> This setup is outdated and should not be used. Please refer to [dotfiles](https://github.com/mark-omarov/dotfiles) repository going forward.
+
 This is a playbook to set up my development environment on a new machine. It's a work in progress, and I'm not sure how useful it will be to anyone else. I'm using it to document and automate my own setup.
 
 ## Ansible Installation
